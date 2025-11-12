@@ -62,7 +62,7 @@ function mostrarGanadorSiCorresponde(datos) {
         const ganador = datos[0].nombre;
         ganadorDiv.innerHTML = `
       <div class="ganador-final">
-        <img src="/victory.jpeg" alt="Ganador" class="img-ganador">
+        <img src="victory.jpeg" alt="Ganador" class="img-ganador">
         <span>${ganador}</span>
        <p>¡Campeón Torneo ARAM – ¿Quién mata más?</p>
       </div>
