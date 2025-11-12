@@ -56,15 +56,15 @@ function renderTabla(datos) {
 
 function mostrarGanadorSiCorresponde(datos) {
     const ganadorDiv = document.getElementById("ganador");
-
     const todosJugaronTres = datos.every(j => j.partidasJugadas === 3);
 
     if (todosJugaronTres) {
         const ganador = datos[0].nombre;
         ganadorDiv.innerHTML = `
       <div class="ganador-final">
-        🏆 <span>${ganador}</span> 🏆
-        <p>¡Campeón Torneo ARAM – ¿Quién mata más?</p>
+        <img src="/victory.jpeg" alt="Ganador" class="img-ganador">
+        <span>${ganador}</span>
+       <p>¡Campeón Torneo ARAM – ¿Quién mata más?</p>
       </div>
     `;
     } else {

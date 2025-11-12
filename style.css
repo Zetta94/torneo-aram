@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #eee;
-    background: url('fondo-lol.jpg') no-repeat center center fixed;
+    background: url('/fondo-lol.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
@@ -143,5 +143,25 @@ tbody tr:first-child {
 
     to {
         text-shadow: 0 0 30px #ffcc00, 0 0 50px #ffaa00;
+    }
+}
+
+.img-ganador {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 200px;
+    animation: aparecer 2s ease-in-out;
+    filter: drop-shadow(0 0 15px gold);
+}
+
+@keyframes aparecer {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }
