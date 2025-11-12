@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    color: #eee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eee;
     background: url('fondo-lol.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
@@ -21,42 +21,127 @@ body {
 .container {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
-    padding: 20px;
-    background-color: rgba(30, 30, 30, 0.8);
-    border-radius: 8px;
+    padding: 25px;
+    background-color: rgba(25, 25, 25, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
 
 h1 {
     text-align: center;
-    color: #00b4ff;
-    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+    margin-bottom: 25px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #555;
 }
 
 th,
 td {
-    border: 1px solid #444;
     padding: 10px;
+    border: 1px solid #333;
     text-align: center;
 }
 
 th {
-    background-color: #00b4ff33;
+    background-color: rgba(255, 215, 0, 0.2);
+    color: #ffcc00;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tbody tr:first-child {
+    background-color: rgba(255, 215, 0, 0.2);
+    font-weight: bold;
+    color: #ffcc00;
 }
 
 #ganador {
     margin-top: 20px;
     text-align: center;
     font-size: 1.4em;
+    color: #00b4ff;
+    text-shadow: 0 0 8px #00b4ff;
+    animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo {
+    from {
+        text-shadow: 0 0 10px #00b4ff;
+    }
+
+    to {
+        text-shadow: 0 0 25px #00b4ff;
+    }
+}
+
+.reglas {
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.reglas h2 {
     color: #ffcc00;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #ffcc00;
+}
+
+.reglas h3 {
+    color: #00b4ff;
+    margin-top: 20px;
+}
+
+.reglas ul {
+    list-style-type: "⚔️ ";
+    margin-left: 20px;
+}
+
+.reglas p,
+.reglas li {
+    line-height: 1.5em;
+}
+
+.ganador-final {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2.2em;
+    color: #ffcc00;
+    text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffaa00;
+    animation: brillar 2s infinite alternate;
+}
+
+.ganador-final span {
+    font-size: 1.4em;
+    color: #fff;
+    text-shadow: 0 0 25px #ffcc00, 0 0 50px #ffaa00;
+}
+
+.ganador-final p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ccc;
+    text-shadow: 0 0 5px #000;
+}
+
+@keyframes brillar {
+    from {
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffaa00;
+    }
+
+    to {
+        text-shadow: 0 0 30px #ffcc00, 0 0 50px #ffaa00;
+    }
 }

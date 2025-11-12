@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torneo ARAM – ¿Quién mata más?</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,22 +11,55 @@
 <body>
     <div class="overlay"></div>
     <div class="container">
-        <h1>Torneo ARAM – ¿Quién mata más?</h1>
+        <h1>🏆 Torneo ARAM – ¿Quién mata más?</h1>
+
         <table id="ranking">
             <thead>
                 <tr>
+                    <th>#</th>
                     <th>Jugador</th>
                     <th>Puntos</th>
-                    <th>Kills totales</th>
-                    <th>Daño total</th>
+                    <th>Partidas Jugadas</th>
+                    <th>Partidas Ganadas</th>
+                    <th>Kills Totales</th>
+                    <th>Pentakills</th>
+                    <th>Daño Total</th>
                 </tr>
             </thead>
-            <tbody>
-                <!-- Renglones generados vía JS -->
-            </tbody>
+            <tbody></tbody>
         </table>
+
         <div id="ganador"></div>
+
+        <section class="reglas">
+            <h2>📜 Reglas del Torneo</h2>
+            <p><strong>Modo de juego:</strong> ARAM o ARAM Caos.</p>
+            <p>Los jugadores compiten para ver quién realiza más asesinatos durante la partida.<br>
+                Luego de 3 partidas (o la cantidad definida) el jugador con más puntos gana.</p>
+
+            <h3>⚔️ Máximas</h3>
+            <ul>
+                <li>El jugador que realice más asesinatos suma <strong>3 puntos</strong>.</li>
+                <li>En caso de empate entre 2 o más jugadores, esos jugadores suman <strong>1 punto</strong>.</li>
+                <li>Si la partida se gana, todos suman <strong>1 punto</strong> a excepción del o los ganador/es.</li>
+            </ul>
+
+            <h3>💥 Opcionales</h3>
+            <ul>
+                <li>Si un jugador realiza más de 100k de daño, suma <strong>1 punto extra</strong>.</li>
+                <li>Si un jugador realiza 25 o más asesinatos, suma <strong>1 punto extra</strong>.</li>
+                <li>Si un jugador realiza un Pentakill, suma <strong>2 puntos extras</strong>.</li>
+            </ul>
+
+            <h3>🏁 Desempate</h3>
+            <p>En caso de empate en puntos luego de las 3 partidas, el ganador se definirá por:</p>
+            <ul>
+                <li>Más asesinatos totales en todas las partidas.</li>
+                <li>Mayor daño total acumulado.</li>
+            </ul>
+        </section>
     </div>
+
     <script src="script.js"></script>
 </body>
 
