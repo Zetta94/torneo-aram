@@ -165,3 +165,30 @@ tbody tr:first-child {
         opacity: 1;
     }
 }
+
+/* 🥇 Primer lugar */
+tbody tr:nth-child(1) {
+    background-color: rgba(255, 215, 0, 0.3);
+    /* dorado */
+    color: #ffd700;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ffcc00;
+}
+
+/* 🥈 Segundo lugar */
+tbody tr:nth-child(2) {
+    background-color: rgba(192, 192, 192, 0.25);
+    /* plateado */
+    color: #d0d0d0;
+    font-weight: bold;
+    text-shadow: 0 0 6px #cccccc;
+}
+
+/* 🥉 Tercer lugar */
+tbody tr:nth-child(3) {
+    background-color: rgba(205, 127, 50, 0.25);
+    /* bronce */
+    color: #cd7f32;
+    font-weight: bold;
+    text-shadow: 0 0 6px #cd7f32;
+}
